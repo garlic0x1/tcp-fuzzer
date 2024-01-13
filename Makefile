@@ -20,7 +20,8 @@ OBJS=$(patsubst $(SRC)/%.c, $(OBJ)/%.o, $(SRCS))
 all: prepare $(BIN)
 
 prepare:
-	-mkdir $(BINDIR) $(OBJ)
+	-mkdir $(BINDIR)
+	-mkdir $(OBJ)
 
 $(BIN): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(BIN)
