@@ -6,3 +6,4 @@ tmp/
 
 bin/*
 obj/*
+.ccls-cache/
